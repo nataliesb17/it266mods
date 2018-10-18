@@ -699,7 +699,7 @@ entityDef player_marine
 	"pm_stepsize"						"40" // changed from 80 to 40
 	"pm_speed"						"300"  	//DOOM speed was 140; changed from 160 to 300
 	"pm_walkspeed"						"100" // changed from 80 to 100
-	"pm_crouchspeed"					"80"
+	"pm_crouchspeed"					"300" //changed from 80 to 300
 	"pm_noclipspeed"					"270"	
 	"pm_minviewpitch"					"-89"	// looking up
 //	"pm_maxviewpitch"					"53"	// looking down
@@ -821,7 +821,7 @@ entityDef player_strogg
 	"model"								"model_player_strogg"
 
 	// stats
-	"health"							"125"
+	"health"							"300" //changed from 125 to 300
 	"maxhealth"							"125"
 	"armor"								"0"
 	"maxarmor"							"125"
@@ -1293,7 +1293,7 @@ entityDef player_marine_mp
 	"w09_text"			"%s was compressed into a singularity by %s"
 	"w10_text"			"%s was toasted by %s"
 	
-	"dm0_text"			"%s was killed by %s"
+	"dm0_text"			"%s was fucking killed by %s"
 	"dm1_text"			"%s was telefragged by %s"
 	
 	"icon qad"			"gfx/guis/hud/icons/item_quadkill_colored"
