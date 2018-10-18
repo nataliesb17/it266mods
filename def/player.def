@@ -635,7 +635,7 @@ entityDef player_marine
 	"copy_joint legs_channel"				"legs_channel"
 
 	// weapon slots
-	"def_weapon0"						"weapon_blaster"
+	"def_weapon0"						"weapon_gauntlet" // change from weapon_blaster to weapon_gauntlet
 	"weapon0_best"						"1"			// whether weapon should be chosen when out of ammo
 	"weapon0_cycle"						"1"			// whether weapon should be selected when using next/prev weapon
 	"weapon0_toggle"					"0"			// whether selecting weapon twice switches between current and previous weapons
@@ -692,13 +692,13 @@ entityDef player_marine
 	// default weapons
 	// seperate multiple weapons with commas (no spaces).
 	// NOTE: default ammo must be specified explicitly.
-	"weapon"						"weapon_blaster"
+	"weapon"						"weapon_gauntlet" //changed to gauntlet
 	"current_weapon"					"0"
 
-	"pm_jumpheight"						"200"
-	"pm_stepsize"						"80"
-	"pm_speed"						"160"  	//DOOM speed was 140
-	"pm_walkspeed"						"80"
+	"pm_jumpheight"						"100" //changed from 200 to 100
+	"pm_stepsize"						"40" // changed from 80 to 40
+	"pm_speed"						"300"  	//DOOM speed was 140; changed from 160 to 300
+	"pm_walkspeed"						"100" // changed from 80 to 100
 	"pm_crouchspeed"					"80"
 	"pm_noclipspeed"					"270"	
 	"pm_minviewpitch"					"-89"	// looking up
@@ -710,8 +710,8 @@ entityDef player_marine
 	"pm_staminarate"					"0.75"
 	"pm_crouchheight"					"38"
 	"pm_crouchviewheight"					"32"
-	"pm_normalheight"					"74"
-	"pm_normalviewheight"					"68"
+	"pm_normalheight"					"68" // changed from 74 to 68
+	"pm_normalviewheight"					"64" // changed from 68 to 64
 	"pm_deadheight"						"20"
 	"pm_deadviewheight"					"10"
 	"pm_crouchrate"						"0.87"

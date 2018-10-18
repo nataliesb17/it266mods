@@ -5941,7 +5941,7 @@ void idPlayer::DropWeapon( void ) {
 
 	assert( !gameLocal.isClient );
 
-	if( !gameLocal.isMultiplayer ) {
+	if( gameLocal.isMultiplayer ) {
 		return;
 	}
 

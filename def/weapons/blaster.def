@@ -65,7 +65,7 @@ entityDef weapon_blaster
 	"spawnclass"				"idItem"
 	"weaponclass"				"rvWeaponBlaster"
 	"weaponname"				"Blaster"
-	"size"						"32 32 32"
+	"size"						"32 32 32"	//default "32 32 32"
 
   	"model_view"				"weapon_blaster_view"
   	"model_view_strogg"			"weapon_blaster_view_strogg"
@@ -78,11 +78,11 @@ entityDef weapon_blaster
 	"joint_world_flash"			"muzzle_flash"
 
 	// Firing properties
-	"chargeTime"				".001"
-	"chargeDelay"				".1"
+	"chargeTime"				".01"		//default ".8"
+	"chargeDelay"				".01"		//default ".1"
 	"chargeGlow"				"0 .4"
-	"fireRate"					".0001"
-	"spread"					".5"
+	"fireRate"					".001"	//default ".15"
+	"spread"					"5"	//default ".2"
 
 //	"def_projectile"			"projectile_blaster"
 	"def_hitscan"				"hitscan_blaster"
@@ -106,13 +106,16 @@ entityDef weapon_blaster
 
 	// -------------------- Recoil and Muzzle Kick ---------------------------------------
 
-	"muzzle_kick_time"			"0.1"
-	"muzzle_kick_maxtime"		"0.2"
-	"muzzle_kick_angles"		"-5 0 0"
-	"muzzle_kick_offset"		"2 0 0"
+//Muzzle Kick affects where the gun fires separate from camera
+//Recoil affects camera view
 
-	"recoilTime"				"100"
-	"recoilAngles"				"-2 0 0"
+	"muzzle_kick_time"			".7"		//default "0.1"
+	"muzzle_kick_maxtime"		".8"			//default "0.2"
+	"muzzle_kick_angles"		"-15 60 0"		//default "-5 0 0" (x,y,z)
+	"muzzle_kick_offset"		"10 40 0"              //default "2 0 0"
+
+	"recoilTime"				"320"        //default "100"
+	"recoilAngles"				"-9.5 0 0"    //default "-2 0 0"
 	
 	// ---------------------------- Flashlight ---------------------------------------
 	
@@ -129,7 +132,7 @@ entityDef weapon_blaster
 	// ---------------------------- Muzzle Flash ---------------------------------------
 
 	"mtr_flashShader"			"lights/muzzleflash"
-	"flashColor"				"0.7 0.8 1"
+	"flashColor"				"3 54 56"		//default "0.7 0.8 1" (R G B)
 	"flashRadius"				"200"
 	"flashPointLight"			"1"
 	"flashTime"					".1"
@@ -280,9 +283,6 @@ entityDef projectile_blaster
 	"fx_impact_monstermetal"	"effects/weapons/blaster/impact_monstermetal.fx"
 	"fx_impact_electronics"		"effects/weapons/machinegun/impact_electronics.fx"
 	"fx_impact_armor"			"effects/weapons/machinegun/impact_armor.fx"
-	
-	"fx_teleport_enter"		"effects/mp/item_teleport.fx"
-	"fx_teleport"			"effects/mp/item_teleport.fx"
 }
 
 entityDef projectile_blaster_charged
@@ -325,15 +325,15 @@ entityDef damage_blaster
 entityDef damage_blaster_charged
 {
 	"inherit"					"damage_blaster"
-	"damage"					"50"
+	"damage"					"10000"		//default "50"
 }
 
 entityDef damage_blastersplash_charged
 {
 	"inherit"					"damage_blaster"
 	
-	"damage"					"40"
-	"radius"					"50"
-	"knockback"					"30"
-	"push"						"2500"
+	"damage"					"10000"		//default "40"
+	"radius"					"50"		//default "50"
+	"knockback"					"30"		//default "30" (affects player)
+	"push"						"25000"		//default "2500"
 }

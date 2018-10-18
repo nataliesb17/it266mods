@@ -168,6 +168,20 @@ void rvMonsterStroggMarine::OnStopMoving ( aiMoveCommand_t oldMoveCommand ) {
 	{
 		if ( combat.tacticalCurrent == AITACTICAL_HIDE )
 		{
+			float rVal = gameLocal.random.RandomInt(100);
+
+			if (spawnArgs.GetFloat("no_drops") >= 1.0){
+				spawnArgs.Set("def_dropsItem1", "");
+			}
+			else{
+				// Fixme!  Better guys should drop better stuffs!  Make drops related to guy type?  Do something cooler here?
+				if (rVal < 25){	// Half of guys drop nothing?
+					spawnArgs.Set("def_dropsItem1", "");
+				}
+				else if (rVal < 50){
+					spawnArgs.Set("def_dropsItem1", "item_health_small");
+				}
+			}
 		}
 		else if ( combat.tacticalCurrent == AITACTICAL_MELEE )
 		{
