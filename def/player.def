@@ -695,7 +695,7 @@ entityDef player_marine
 	"weapon"						"weapon_gauntlet" //changed to gauntlet
 	"current_weapon"					"0"
 
-	"pm_jumpheight"						"100" //changed from 200 to 100
+	"pm_jumpheight"						"1000" //changed from 200 to 100
 	"pm_stepsize"						"40" // changed from 80 to 40
 	"pm_speed"						"300"  	//DOOM speed was 140; changed from 160 to 300
 	"pm_walkspeed"						"100" // changed from 80 to 100

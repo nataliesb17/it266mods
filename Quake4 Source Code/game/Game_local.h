@@ -475,6 +475,7 @@ public:
 	virtual void			MapShutdown( void );
 	virtual void			CacheDictionaryMedia( const idDict *dict );
 	virtual void			SpawnPlayer( int clientNum );
+	void					Cmd_Spawn_f(const idCmdArgs &args); //added this from SysCmds
 // RAVEN BEGIN
 	virtual gameReturn_t	RunFrame( const usercmd_t *clientCmds, int activeEditors, bool lastCatchupFrame, int serverGameFrame );
 	virtual	void			MenuFrame( void );
