@@ -332,8 +332,8 @@ entityDef damage_blastersplash_charged
 {
 	"inherit"					"damage_blaster"
 	
-	"damage"					"10000"		//default "40"
+	"damage"					"80"		//default "40"
 	"radius"					"50"		//default "50"
 	"knockback"					"30"		//default "30" (affects player)
-	"push"						"25000"		//default "2500"
+	"push"						"2500"		//default "2500"
 }

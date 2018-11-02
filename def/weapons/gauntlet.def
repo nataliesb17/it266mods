@@ -133,14 +133,14 @@ entityDef weapon_gauntlet
 	
 	"joint_blade"				"center"
 	"blade_spinfast"			"900 0 0"
-	"blade_spinslow"			"90 0 0"
+	"blade_spinslow"			"200 0 0" //default 90 0 0
 	"blade_accel"				".5" //changed .25 to .5
 
 	"def_damage"				"damage_gauntlet"
 	"fx_impact"					"effects/weapons/gauntlet/impact.fx"
 	"fx_impact_flesh"			"effects/weapons/gauntlet/impact_flesh.fx"
 	"fx_impact_monstermetal"	"effects/weapons/gauntlet/impact_monstermetal.fx"
-	"range"						"48"
+	"range"						"80" //default 48
 	"fireRate"					".4"
 
 	"has_windup"				"1"
@@ -204,7 +204,7 @@ entityDef damage_gauntlet
 	"deathPush"					"200"
 	"deathPushMin"				"2000 400"
 	"deathPushMax"				"4000 500"
-	"knockback"					"30" //change 50 to 30
+	"knockback"					"80" //change 50 to 80
 	
 	"bleed"						"1"
 }
